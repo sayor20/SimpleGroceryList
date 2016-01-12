@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:fitsSystemWindows="true"
+    tools:context="com.sayor.org.simplegrocerylist.activities.EditItemActivity">
+
+    <android.support.design.widget.AppBarLayout android:id="@+id/appLayout" android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.design.widget.TextInputLayout
+            android:paddingTop="20dp"
+            android:layout_width="match_parent"
+            android:transitionName="name"
+            android:layout_height="wrap_content">
+            <EditText android:id="@+id/edtName" android:layout_height="wrap_content" android:layout_width="match_parent" android:hint="@string/name"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.v7.widget.Toolbar android:id="@+id/toolbar"
+            android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary" app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.design.widget.FloatingActionButton android:id="@+id/fabDelete"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end" android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/ic_delete"
+        app:layout_anchor="@id/toolbar"
+        app:layout_anchorGravity="center_horizontal|left|center"
+        android:onClick="onDelete" />
+
+    <android.support.design.widget.FloatingActionButton android:id="@+id/fabSave"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end" android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/ic_save"
+        app:layout_anchor="@id/toolbar"
+        app:layout_anchorGravity="center_horizontal|right|center"
+        android:onClick="onSave" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+    <LinearLayout android:orientation="vertical"
+        android:paddingTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.design.widget.TextInputLayout
+            android:layout_height="wrap_content"
+            android:transitionName="desc"
+            android:layout_width="match_parent">
+            <EditText android:id="@+id/edtDesc" android:layout_height="wrap_content" android:layout_width="match_parent" android:hint="@string/desc"/>
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_height="wrap_content"
+            android:transitionName="qty"
+            android:layout_width="match_parent">
+            <EditText android:id="@+id/edtQty" android:layout_height="wrap_content" android:layout_width="match_parent" android:inputType="number" android:hint="@string/qty"/>
+        </android.support.design.widget.TextInputLayout>
+        <CheckBox
+            android:id="@+id/cbPurchase"
+            android:text="@string/purchased"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false" />
+
+    </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>
+
+
+
+
+

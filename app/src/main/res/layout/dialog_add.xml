@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent" android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:layout_height="match_parent">
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" >
+        <EditText android:id="@+id/etName" android:layout_height="wrap_content" android:layout_width="match_parent" android:hint="@string/name"/>
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <EditText android:id="@+id/etDesc" android:layout_height="wrap_content" android:layout_width="match_parent" android:hint="@string/desc"/>
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <EditText android:id="@+id/etQty" android:layout_height="wrap_content" android:layout_width="match_parent" android:inputType="number" android:hint="@string/qty"/>
+    </android.support.design.widget.TextInputLayout>
+</LinearLayout>

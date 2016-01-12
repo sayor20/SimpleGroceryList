@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SimpleGroceryList</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_blank_fragment">Add Items</string>
+    <string name="name">Name</string>
+    <string name="desc">Description</string>
+    <string name="qty">Quantity</string>
+    <string name="purchased">Purchased</string>
+</resources>
