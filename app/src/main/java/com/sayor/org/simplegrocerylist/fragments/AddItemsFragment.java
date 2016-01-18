@@ -82,7 +82,8 @@ public class AddItemsFragment extends android.support.v4.app.DialogFragment {
         // Verify that the host activity implements the callback interface
         try {
             // Instantiate the NoticeDialogListener so we can send events to the host
-            mListener = (ListUpdateCallback) activity;
+            if(mListener==null)
+                mListener = (ListUpdateCallback) activity;
         } catch (ClassCastException e) {
             // The activity doesn't implement the interface, throw exception
             throw new ClassCastException(activity.toString()

@@ -19,6 +19,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".activities.EditItemActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.sayor.org.simplegrocerylist.activities.GroceryListActivity" />
         </activity>
     </application>
 
